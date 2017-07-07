@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Metadata Microservice</title>
+    <meta name="description" content="An app that returns the size of a file">
+    <link id="favicon" rel="icon" href="http://www.favicon.cc/logo3d/178839.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        File Metadata Microservice
+      </h1>
+    </header>
+
+    <main>
+      <h2>User stories:</h2>
+      <ul>
+        <li> I can submit a FormData object that includes a file upload.</li>
+        <li>When I submit something, I will receive the file size in bytes within the JSON response.</li>
+      </ul>
+    </main>
+
+    <form action="fileupload" method="post" enctype="multipart/form-data">
+      <input type="file" name="filetoupload">
+      <br>
+      <input type="submit">
+    </form>
+
+  </body>
+</html>
